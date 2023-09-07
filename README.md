@@ -35,11 +35,21 @@ Nest JS, Mongo DB
 ## Запуск
 Для запуска клиента в тестовом режиме из папки /client напишите:
 
-    npm run dev
+    $ npm run dev
+    
+    Переменные окружения:
+    VITE_APP_API_KEY - ваш апи ключ для openweathermap
+    VITE_APP_WEATHER_API_BASE=https://api.openweathermap.org
+    VITE_APP_REQUEST_PER_HOUR_LIMIT=15 - лимит на количество запросов в час для неавторизованных пользователей
+
 
 Для запуска сервера из папки /server напишите:
 
-    npm run start
+    $ npm run start
+
+    Переменные окружения:
+    DB_CONNECT - ссылка на подключение к Mongo DB
+    JWT_SECRET - секретная фраза для jwt
 
 
 ## Нереализованный Функционал
